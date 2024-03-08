@@ -1,11 +1,8 @@
-import { useState } from "react";
+/* eslint-disable no-unused-vars */
+import React from "react";
+import PropTypes from "prop-types";
 
-const Card = () => {
-  const [name, setName] = useState();
-
-  const updateName = () => {
-    setName("SpongeBob");
-  };
+const Card = ({ name }) => {
   return (
     <div className="flex justify-center items-center">
       <div className="border border-solid border-gray-500 rounded-[15px] shadow-2xl-gray p-[20px] m-[10px] text-center max-w-lg inline-block">
@@ -17,16 +14,12 @@ const Card = () => {
         <h2 className="font-sans m-0 font-semibold">Name: {name}</h2>
         <p className="font-mono">I am an engineer and a chemist!</p>
       </div>
-      <div className="ml-5">
-        <button
-          className="bg-blue-400 rounded-md p-2 hover:bg-yellow-300 xl:duration-125 "
-          onClick={updateName}
-        >
-          Set Name
-        </button>
-      </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  name: PropTypes.string,
 };
 
 export default Card;
