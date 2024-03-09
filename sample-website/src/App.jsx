@@ -7,7 +7,7 @@ import UserGreeting from "./components/UserGreeting.jsx";
 import Form from "./components/Form.jsx";
 import ObjectUpdate from "./components/ObjectUpdate.jsx";
 import ArrayUpdate from "./components/ArrayUpdate.jsx";
-
+import Footer from "./components/Footer.jsx";
 //Hook Components
 import Hooks from "./hooks/Hooks.jsx";
 import ColorPicker from "./hooks/ColorPicker.jsx";
@@ -36,6 +36,8 @@ function App() {
       <Effect />
       <ContextA />
       <Ref />
+
+      <Footer />
     </>
   );
 }
