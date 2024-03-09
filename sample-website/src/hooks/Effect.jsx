@@ -9,7 +9,7 @@ const Effect = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    document.title = `My Counter Program: ${count}`;
+    document.title = `My React Tutorial: ${count}`;
   }, [count]);
 
   function addCount() {
