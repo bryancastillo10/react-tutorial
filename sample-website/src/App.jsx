@@ -13,7 +13,9 @@ import Hooks from "./hooks/Hooks.jsx";
 import ColorPicker from "./hooks/ColorPicker.jsx";
 import Effect from "./hooks/Effect.jsx";
 import Ref from "./hooks/Ref.jsx";
-import Context from "./hooks/Context.jsx";
+
+//UseContext Demo
+import ContextA from "./hooks/ContextA.jsx";
 
 function App() {
   const [username, setUserName] = useState("Guest");
@@ -32,7 +34,7 @@ function App() {
       <ObjectUpdate />
       <ArrayUpdate />
       <Effect />
-      <Context />
+      <ContextA />
       <Ref />
     </>
   );
