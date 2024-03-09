@@ -1,10 +1,19 @@
 import PropTypes from "prop-types";
 
 import { useState } from "react";
-import Hooks from "./hooks/Hooks.jsx";
+
+//Functional Components
 import UserGreeting from "./components/UserGreeting.jsx";
 import Form from "./components/Form.jsx";
+import ObjectUpdate from "./components/ObjectUpdate.jsx";
+import ArrayUpdate from "./components/ArrayUpdate.jsx";
+
+//Hook Components
+import Hooks from "./hooks/Hooks.jsx";
 import ColorPicker from "./hooks/ColorPicker.jsx";
+import Effect from "./hooks/Effect.jsx";
+import Ref from "./hooks/Ref.jsx";
+import Context from "./hooks/Context.jsx";
 
 function App() {
   const [username, setUserName] = useState("Guest");
@@ -20,6 +29,11 @@ function App() {
       <Form />
 
       <ColorPicker />
+      <ObjectUpdate />
+      <ArrayUpdate />
+      <Effect />
+      <Context />
+      <Ref />
     </>
   );
 }
